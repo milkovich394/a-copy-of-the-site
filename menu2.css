@@ -1,0 +1,43 @@
+ul {
+    list-style: none; /*убираем маркеры списка*/
+    margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+    padding-left: 0; /*убираем левый отступ, равный 40px*/
+  }
+  a { text-decoration:none;
+    text-transform: uppercase;
+    color: #eb5d1e;
+    text-align: center;}
+  .line {
+    display: inline;
+    background: white;
+    text-transform: uppercase;
+    color: #eb5d1e;
+    
+    width: 100px;
+    height: 40px;
+
+}
+
+  .menu2 {
+    visibility: hidden; 
+    opacity: 0;
+    position: absolute;
+    left: -1px;
+    bottom: -335px;
+    transition: .3s linear;
+    
+}
+li:hover > .menu2 {
+    visibility: visible; 
+    opacity: 1;
+}
+.menu2 a{
+    font-size: 17px;
+}
+.menu2, .menu2 LI{
+    background-color: white;
+    text-align: left;
+    font-size: 17px;
+    border: 0.5px solid rgb(148, 147, 147);
+    width: 400px;
+}
